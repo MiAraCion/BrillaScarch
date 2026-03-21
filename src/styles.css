@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    font-family: var(--font-principal);
+    padding: 0px;
+    margin: 0px;
+}
+
+
+:root{
+
+
+
+
+    --primary-color: #f42525;
+
+    --fondo-principal: #ffffff;
+    --fondo-secundario: #fdf2f2;
+    --fondo-terceario: #F8E1E1;
+    --fondo-cuarto: #221010;
+    --fondo-quinto: #382727;
+
+
+    
+    --texto-primario: #1a1a1a;
+    --texto-secundario: #94A3B8;
+    --texto-tercero: #FFFFFF;
+    --acento-confianza:  #22c55e;
+    
+    --font-principal: 'Be Vietnam Pro', sans-serif;
+
+
+
+}
+
+
+
+.flex{
+    display: flex;
+    gap: 0px 20px;
+}
