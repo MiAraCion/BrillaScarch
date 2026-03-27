@@ -1,19 +1,117 @@
-<section>
-    <div>
-        <span>
-            VENTA AL POR MAYOR Y MENOR
-        </span>
-        <h2>Dale <span>brillo</span> a tus proyectos con Brilla Scarch</h2>
-        <p>Especialistas en escarcha, lentejuelas y mostacilla de alta calidad. Disponibles por kilo, en planchas y por tiras para manualidades, moda y decoracion</p>
-        <button>Ver Productos</button>
-        <button>Asesoría Directa</button>
+<section class="p-[150px] flex bg-[var(--fondo-secundario)] mb-40">
+    <div class="sm:w-[50%]">
+        <div class="max-w-[600px]"> 
+            <span class="
+            block
+            max-w-max
+            mb-6
+            font-bold 
+            py-2 
+            px-4 
+            border-0 
+            rounded-4xl 
+            bg-[var(--fondo-terceario)] 
+            text-[var(--primary-color)]">
+                VENTA AL POR MAYOR Y MENOR
+            </span>
+            <h2 class="
+            text-[72px]
+            font-bold
+            mb-6
+            -tracking-[2px]
+            leading-[80px] 
+            text-[var(--texto-primario)]" >Dale <span class="text-[var(--primary-color)]">brillo</span> a tus proyectos con Brilla Scarch</h2>
+            <p class="tet-[var(--texto-secundario)] text-[18px] mb-12">Especialistas en escarcha, lentejuelas y mostacilla de alta calidad. Disponibles por kilo, en planchas y por tiras para manualidades, moda y decoracion</p>
+            
+            <div class="flex gap-5">
+                <button  class=" rounded-2xl bg-[var(--primary-color)] text-[var(--fondo-principal)] text-[18px] font-bold px-5 py-3">Ver Productos</button>
+                <button class=" rounded-2xl bg-[var(--fondo-principal)] text-[var(--texto-primario)] text-[18px] font-bold px-5 py-3 border-2 border-[var(--texto-secundario)]">Asesoría Directa</button>
+            </div>
+        </div>
 
 
     </div>
-    <div>
-        <div>
-            <img src="/svg/fondo.svg" alt="">
-            <span>Calidad Premium Garantizada</span>
+    <div class="sm:w-[50%]">
+        <div class="relative border border-[var(--fondo-principal)] max-w-max mx-auto ">
+            <img class="rounded-4xl" src="/svg/fondo.svg" alt="">
+            <div class="bg-[var(--fondo-principal-rgba)]  w-[90%] p-4 rounded-2xl absolute left-1/2 -translate-1/2 bottom-[5%] flex border border-amber-50">
+                <img src="/svg/check_rojo.svg" alt="">
+                <p class="text-[var(--texto-tercero)]">Calidad Premium Garantizada</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-[var(--fondo-principal)] mb-40">
+    <h2 class="max-w-max mx-auto text-[36px] font-bold mb-6">Insumos de alta calidad</h2>
+    <span class="block max-w-[650px] text-[var(--texto-secundario)] text-center mx-auto mb-6">Seleccionamos los mejores materiales para que tus creaciones tengan un acabado profesional y duradero</span>        
+    <app-list-products/>
+    
+
+
+</section>
+
+<section class="bg-[var(--fondo-secundario)] flex justify-center pb-40 pt-40">
+    <div class="md:w-max-w md:px-20">
+        <h3 class="text-[36px] text-[var(--texto-primario)] font-bold max-w-[500px] mb-6">Te acompañamos en tu compra</h3>
+        <p class="text-[var(--texto-secundario)] max-w-[500px]">
+            Somos una empresa confiable con años en el mercado.        
+        </p>
+        <P class="text-[var(--texto-secundario)] max-w-[450px] mb-6">Entendemos tus necesidades y te ofrecemos el soporte necesario para que tu pedido sea éxitoso</P>
+
+        <div class="bg-[var(--fondo-principal)] rounded-2xl max-w-[500px] flex p-5 mb-6">
+            <div>
+                <div class="w-8 h-8 bg-[var(--fondo-secundario)] rounded-full flex justify-center items-center">
+                    <img class="w-4 h-4" src="/svg/asesoriaRojo.svg" alt="">
+                </div>
+            </div>
+            <div>
+                <h3 class="text-[18px] text-[var(--texto-primario)] font-bold">Asesoria Personalizada</h3>
+                <p class="text-[var(--texto-secundario)]">Llámanos al <span class="text-[var(--primary-color)]">+51 999 999 999</span> para consejos sobre materiales</p>
+            </div>
+        </div>
+        <div class="bg-[var(--fondo-principal)] rounded-2xl max-w-[500px] flex p-5 mb-6">
+            <div>
+                <div class="w-8 h-8 bg-[var(--fondo-secundario)] rounded-full flex justify-center items-center">
+                    <img src="/svg/EscudoRojo.svg" alt="">
+                </div>
+            </div>
+            <div>
+                <h3 class="text-[18px] text-[var(--texto-primario)] font-bold">Empresa Confiable</h3>
+                <p  class="text-[var(--texto-secundario)]">Garantizamos que tus productos lleguen en perfectas condiciones </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="md:max-w-max">
+        <div class="bg-[var(--fondo-principal)] rounded-2xl max-w-max drop-shadow-2xl shadow-black px-10 pt-10 pb-12">
+            <div class="flex mb-6">
+                <div class="w-10 h-8 bg-[var(--primary-color)] rounded-full flex justify-center items-center">
+                    <img src="/svg/CamionBlanco.svg" alt="">
+                </div>
+                <h3 class="text-[24px] text-[var(--texto-primario)] font-bold max-w-[500px] mb-6">Logística y Envíos</h3>
+            </div>
+
+            <div>
+                <div  class="mb-12">
+                    <div class="flex">
+                        <img src="/svg/ubicacion.svg" alt="">
+                        <span class="text-[20px] text-[var(--primary-color)] max-w-[500px]">Lima Metropolitana</span>
+                    </div>
+                    <p class="text-[16px] text-[var(--texto-secundario)] max-w-[500px]">Entrega rápida a domicilio (Precio a tratar)</p>
+                </div>
+                <div class="mb-6">
+                    <div class="flex">
+                        <img src="/svg/ubicacion.svg" alt="">
+                        <span class="text-[20px] text-[var(--primary-color)] max-w-[500px]">Provincias</span>
+                    </div>
+                    <p class="text-[16px] text-[var(--texto-secundario)] max-w-[500px]">Enviamos a todo el Perú a través de las siguientes agencias: </p>                    
+                </div>
+                <div class="w-full flex justify-center">
+                    <button class="w-1/2 p-5 rounded-3xl bg-[#F8FAFC] border border-[var(#F1F5F9)] text-[var(--texto-secundario)] font-bold">SHALOM</button>
+                    <button class="w-1/2 p-5 rounded-3xl bg-[#F8FAFC] border border-[var(#F1F5F9)] text-[var(--texto-secundario)] font-bold">PALOMINO</button>   
+                </div>
+            </div>
         </div>
     </div>
 </section>

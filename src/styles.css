@@ -1,8 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+
 body{
-    font-family: var(--font-principal);
+    
     padding: 0px;
     margin: 0px;
+    font-family: 'Be Vietnam Pro', sans-serif;
 }
 
 
@@ -14,22 +19,21 @@ body{
     --primary-color: #f42525;
 
     --fondo-principal: #ffffff;
-    --fondo-secundario: #fdf2f2;
+    --fondo-principal-rgba: rgba(255,255,255,0.2);
+    --fondo-secundario: #fdf2f2;       
     --fondo-terceario: #F8E1E1;
     --fondo-cuarto: #221010;
     --fondo-quinto: #382727;
+    --fondo-sexto:#F8F5F5;
 
 
-    
     --texto-primario: #1a1a1a;
-    --texto-secundario: #94A3B8;
+    --texto-secundario: #475569;
     --texto-tercero: #FFFFFF;
     --acento-confianza:  #22c55e;
-    
-    --font-principal: 'Be Vietnam Pro', sans-serif;
 
 
-
+        
 }
 
 
