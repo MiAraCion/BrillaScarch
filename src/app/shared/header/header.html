@@ -1,25 +1,48 @@
-<nav>
-    <div class="logo-container">
-        <img src="/svg/BrillaScarchLogo.svg" alt="">
-        <h2>Brilla Scarch</h2>
+<nav class="overflow-hidden flex-col p-6 border-b border-[var(--fondo-terceario)] bg-[var(--fondo-secundario)]">
+
+    <!-- TOP -->
+    <div class="flex justify-between mb-6">
+        <div class="flex items-center">
+            <img class="w-8 h-8 hidden md:block" src="/svg/BrillaScarchLogo.svg" alt="">
+            <h2 class="text-[var(--primary-color)] text-[22px] font-bold">Brilla Scarch</h2>
+        </div>
+
+        <div>
+            <button 
+                (click)="MostrarNavBarAndroid()" 
+                class="w-10 h-10 rounded text-[20px] text-[var(--fondo-principal)] bg-[var(--primary-color)] p-2">
+                ☰
+            </button>
+        </div>
     </div>
-    <div>
-        <ul>
-            <li>
-                Inicio
-            </li>
-            <li>
-                Productos
-            </li>
-            <li>
-                Envíos
-            </li>
-            <li>
-                Contacto
-            </li>
-        </ul>
+
+    <!-- CONTENIDO ANIMADO -->
+    <div
+        class="overflow-hidden transition-all duration-300 ease-in-out"
+        [class.max-h-0]="!isOpen"
+        [class.max-h-96]="isOpen"
+        [class.opacity-0]="!isOpen"
+        [class.opacity-100]="isOpen"
+    >
+        <div class="mb-6">
+            <ul>
+                <li class="mb-6 pb-3 text-[var(--texto-primario)] border-b border-b-[var(--primary-color)] font-bold">
+                    Inicio
+                </li>
+                <li class="mb-6 pb-3 text-[var(--texto-primario)] border-b border-b-[var(--primary-color)] font-bold">
+                    Envíos
+                </li>
+                <li class="mb-6 pb-3 text-[var(--texto-primario)] border-b border-b-[var(--primary-color)] font-bold">
+                    Contacto
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <button class="text-[var(--fondo-principal)] font-bold rounded-3xl py-2 px-5 bg-[var(--primary-color)] w-full">
+                Catálogo
+            </button>
+        </div>
     </div>
-    <div>
-        <button>Catálogo</button>
-    </div>
+
 </nav>

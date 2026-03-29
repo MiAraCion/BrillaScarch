@@ -8,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class Header {
 
+
+  isOpen = false;
+
+  MostrarNavBarAndroid(): void {
+    this.isOpen = !this.isOpen;
+  }
+
 }

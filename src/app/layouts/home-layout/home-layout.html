@@ -1,3 +1,12 @@
-<app-header></app-header>
-    <router-outlet></router-outlet>
+<!-- Desktop -->
+<div class="hidden lg:block">
+  <app-header-desktop></app-header-desktop>
+</div>
+
+<!-- Mobile -->
+<div class="block lg:hidden">
+  <app-header></app-header>
+</div>
+
+<router-outlet></router-outlet>
 <app-footer></app-footer>
